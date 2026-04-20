@@ -1,18 +1,25 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "../globals.css";
 
 export const metadata: Metadata = {
   title: "Softtek RPA Solutions | Transformación Digital Empresarial",
   description: "Automatizamos tareas repetitivas en SAP, Web, Excel y bases de datos para aumentar la eficiencia operativa y reducir costos.",
 };
 
-export default function RootLayout({
+export async function generateStaticParams() {
+  return [{ lang: "es" }, { lang: "en" }];
+}
+
+export default async function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: Promise<{ lang: string }>;
 }>) {
+  const resolvedParams = await params;
   return (
-    <html lang="es">
+    <html lang={resolvedParams.lang}>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

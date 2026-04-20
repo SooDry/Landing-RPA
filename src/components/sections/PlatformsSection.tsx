@@ -1,23 +1,29 @@
 import { FadeIn } from "@/components/ui/FadeIn";
 import { Briefcase, Ticket, Kanban, FileCsv, Browser, Database } from "@phosphor-icons/react/dist/ssr";
 
-export function PlatformsSection() {
+export function PlatformsSection({ dict }: { dict?: any }) {
+  const d = dict || {
+    title: "Plataformas que Automatizamos",
+    desc: "Interactuamos fluidamente con los sistemas empresariales más críticos de su organización.",
+    p1: "SAP", p2: "ServiceNow", p3: "Jira", p4: "Excel", p5: "Web Applications", p6: "Databases"
+  };
+
   const platforms = [
-    { icon: <Briefcase size={56} weight="duotone" className="text-secondary mb-5" />, name: "SAP" },
-    { icon: <Ticket size={56} weight="duotone" className="text-secondary mb-5" />, name: "ServiceNow" },
-    { icon: <Kanban size={56} weight="duotone" className="text-secondary mb-5" />, name: "Jira" },
-    { icon: <FileCsv size={56} weight="duotone" className="text-secondary mb-5" />, name: "Excel" },
-    { icon: <Browser size={56} weight="duotone" className="text-secondary mb-5" />, name: "Web Applications" },
-    { icon: <Database size={56} weight="duotone" className="text-secondary mb-5" />, name: "Databases" },
+    { icon: <Briefcase size={56} weight="duotone" className="text-secondary mb-5" />, name: d.p1 },
+    { icon: <Ticket size={56} weight="duotone" className="text-secondary mb-5" />, name: d.p2 },
+    { icon: <Kanban size={56} weight="duotone" className="text-secondary mb-5" />, name: d.p3 },
+    { icon: <FileCsv size={56} weight="duotone" className="text-secondary mb-5" />, name: d.p4 },
+    { icon: <Browser size={56} weight="duotone" className="text-secondary mb-5" />, name: d.p5 },
+    { icon: <Database size={56} weight="duotone" className="text-secondary mb-5" />, name: d.p6 },
   ];
 
   return (
     <section className="bg-white py-24" id="plataformas">
       <div className="container">
         <FadeIn className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Plataformas que Automatizamos</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">{d.title}</h2>
           <p className="text-muted text-lg">
-            Interactuamos fluidamente con los sistemas empresariales más críticos de su organización.
+            {d.desc}
           </p>
         </FadeIn>
 

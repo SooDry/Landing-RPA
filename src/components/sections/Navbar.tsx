@@ -2,14 +2,16 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import { usePathname, useRouter } from "next/navigation";
 import { Button } from "@/components/ui/Button";
 import { List, X } from "@phosphor-icons/react";
 import { cn } from "@/lib/utils";
 
-export function Navbar() {
+export function Navbar({ dict, lang }: { dict: any; lang: string }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [lang, setLang] = useState<"es" | "en">("es");
+  const router = useRouter();
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,12 +22,19 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const changeLanguage = (newLang: string) => {
+    if (lang === newLang) return;
+    // Replace the language prefix in pathname
+    const newPath = pathname.replace(`/${lang}`, `/${newLang}`);
+    router.push(newPath || `/${newLang}`);
+  };
+
   const navLinks = [
-    { href: "#soluciones", label: "Soluciones" },
-    { href: "#plataformas", label: "Plataformas" },
-    { href: "#ia", label: "IA Aplicada" },
-    { href: "#casos-uso", label: "Casos de Uso" },
-    { href: "#metodologia", label: "Metodología" },
+    { href: "#soluciones", label: dict.solutions },
+    { href: "#plataformas", label: dict.platforms },
+    { href: "#ia", label: dict.ai },
+    { href: "#casos-uso", label: dict.useCases },
+    { href: "#metodologia", label: dict.methodology },
   ];
 
   return (
@@ -66,21 +75,21 @@ export function Navbar() {
         <div className="hidden md:flex items-center gap-6">
           <div className="flex items-center gap-2 text-sm font-semibold">
             <button
-              onClick={() => setLang("en")}
+              onClick={() => changeLanguage("en")}
               className={cn("transition-colors", lang === "en" ? "text-secondary" : "text-muted hover:text-main")}
             >
               EN
             </button>
             <span className="text-muted">|</span>
             <button
-              onClick={() => setLang("es")}
+              onClick={() => changeLanguage("es")}
               className={cn("transition-colors", lang === "es" ? "text-secondary" : "text-muted hover:text-main")}
             >
               ES
             </button>
           </div>
           <a href="#contacto">
-            <Button variant="outline">Solicitar Demo</Button>
+            <Button variant="outline">{dict.requestDemo}</Button>
           </a>
         </div>
 
@@ -110,14 +119,14 @@ export function Navbar() {
           <div className="flex flex-col gap-4 mt-4 border-t border-gray-100 pt-6">
             <div className="flex items-center justify-center gap-4 text-sm font-semibold mb-2">
               <button
-                onClick={() => setLang("en")}
+                onClick={() => changeLanguage("en")}
                 className={cn("transition-colors", lang === "en" ? "text-secondary" : "text-muted")}
               >
                 EN
               </button>
               <span className="text-muted">|</span>
               <button
-                onClick={() => setLang("es")}
+                onClick={() => changeLanguage("es")}
                 className={cn("transition-colors", lang === "es" ? "text-secondary" : "text-muted")}
               >
                 ES
@@ -125,7 +134,7 @@ export function Navbar() {
             </div>
             <a href="#contacto" onClick={() => setIsMobileMenuOpen(false)}>
               <Button variant="primary" className="w-full">
-                Solicitar Demo
+                {dict.requestDemo}
               </Button>
             </a>
           </div>

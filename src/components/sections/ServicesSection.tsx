@@ -1,32 +1,47 @@
 import { FadeIn } from "@/components/ui/FadeIn";
 import { Gear, Network, ArrowsMerge, PlugsConnected, Database } from "@phosphor-icons/react/dist/ssr";
 
-export function ServicesSection() {
+export function ServicesSection({ dict }: { dict?: any }) {
+  const d = dict || {
+    title: "Nuestros Servicios de Automatización",
+    desc: "Potenciamos sus operaciones con tecnología de última generación para alcanzar nuevos niveles de eficiencia y precisión empresarial.",
+    s1Title: "Automatización RPA",
+    s1Desc: "Robots de software que ejecutan tareas repetitivas en sistemas empresariales.",
+    s2Title: "Agentes Cognitivos e IA Aplicada",
+    s2Desc: "Agentes capaces de interactuar con usuarios y ejecutar tareas operativas.",
+    s3Title: "Automatización de Procesos",
+    s3Desc: "Optimización de flujos operativos mediante tecnologías de automatización.",
+    s4Title: "Integración de Sistemas",
+    s4Desc: "Conexión entre múltiples sistemas empresariales y plataformas legacy.",
+    s5Title: "Automatización de Datos",
+    s5Desc: "Extracción, procesamiento y generación automática de reportes corporativos."
+  };
+
   const services = [
     {
       icon: <Gear size={36} weight="duotone" className="text-secondary mb-4" />,
-      title: "Automatización RPA",
-      desc: "Robots de software que ejecutan tareas repetitivas en sistemas empresariales.",
+      title: d.s1Title,
+      desc: d.s1Desc,
     },
     {
       icon: <Network size={36} weight="duotone" className="text-secondary mb-4" />,
-      title: "Agentes Cognitivos e IA Aplicada",
-      desc: "Agentes capaces de interactuar con usuarios y ejecutar tareas operativas.",
+      title: d.s2Title,
+      desc: d.s2Desc,
     },
     {
       icon: <ArrowsMerge size={36} weight="duotone" className="text-secondary mb-4" />,
-      title: "Automatización de Procesos",
-      desc: "Optimización de flujos operativos mediante tecnologías de automatización.",
+      title: d.s3Title,
+      desc: d.s3Desc,
     },
     {
       icon: <PlugsConnected size={36} weight="duotone" className="text-secondary mb-4" />,
-      title: "Integración de Sistemas",
-      desc: "Conexión entre múltiples sistemas empresariales y plataformas legacy.",
+      title: d.s4Title,
+      desc: d.s4Desc,
     },
     {
       icon: <Database size={36} weight="duotone" className="text-secondary mb-4" />,
-      title: "Automatización de Datos",
-      desc: "Extracción, procesamiento y generación automática de reportes corporativos.",
+      title: d.s5Title,
+      desc: d.s5Desc,
     },
   ];
 
@@ -34,10 +49,9 @@ export function ServicesSection() {
     <section className="bg-bg-light py-24" id="soluciones">
       <div className="container">
         <FadeIn className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Nuestros Servicios de Automatización</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">{d.title}</h2>
           <p className="text-muted text-lg">
-            Potenciamos sus operaciones con tecnología de última generación para
-            alcanzar nuevos niveles de eficiencia y precisión empresarial.
+            {d.desc}
           </p>
         </FadeIn>
 

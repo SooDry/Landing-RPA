@@ -1,0 +1,110 @@
+{
+  "navbar": {
+    "solutions": "Soluciones",
+    "platforms": "Plataformas",
+    "ai": "IA Aplicada",
+    "useCases": "Casos de Uso",
+    "methodology": "Metodología",
+    "requestDemo": "Solicitar Demo"
+  },
+  "hero": {
+    "badge": "Innovación y Partnership Tecnológico",
+    "titlePrefix": "Reducción de Costos Operacionales con ",
+    "titleHighlight": "Inteligencia Artificial",
+    "subtitle": "Escalabilidad sin precedentes y cero errores manuales. Automatización cross-platform inteligente operando fluidamente entre ",
+    "subtitleHighlight": "SAP, plataformas Web, Excel y Bases de Datos.",
+    "ctaAudit": "Agendar Auditoría de Procesos",
+    "ctaExplore": "Explorar Arquitectura",
+    "trustTitle": "Confianza Enterprise Garantizada",
+    "trust1": "Integración Nativa SAP",
+    "trust2": "Ecosistema Microsoft",
+    "trust3": "Seguridad y Cumplimiento"
+  },
+  "services": {
+    "title": "Nuestros Servicios de Automatización",
+    "desc": "Potenciamos sus operaciones con tecnología de última generación para alcanzar nuevos niveles de eficiencia y precisión empresarial.",
+    "s1Title": "Automatización RPA",
+    "s1Desc": "Robots de software que ejecutan tareas repetitivas en sistemas empresariales.",
+    "s2Title": "Agentes Cognitivos e IA Aplicada",
+    "s2Desc": "Agentes capaces de interactuar con usuarios y ejecutar tareas operativas.",
+    "s3Title": "Automatización de Procesos",
+    "s3Desc": "Optimización de flujos operativos mediante tecnologías de automatización.",
+    "s4Title": "Integración de Sistemas",
+    "s4Desc": "Conexión entre múltiples sistemas empresariales y plataformas legacy.",
+    "s5Title": "Automatización de Datos",
+    "s5Desc": "Extracción, procesamiento y generación automática de reportes corporativos."
+  },
+  "frida": {
+    "title": "El Estándar Frida:",
+    "titleHighlight": "Automatización Resiliente a Nivel Enterprise",
+    "subtitle": "No construimos scripts. Implementamos arquitecturas robustas sobre UiPath preparadas para escalar.",
+    "f1Title": "Manejo de Excepciones Avanzado",
+    "f1Desc1": "Recuperación automática de errores, State Machines complejos y logs transaccionales limpios. Estructuras preparadas para fallos del sistema o cambios de UI, garantizando ",
+    "f1DescBold": "cero bots colgados en producción.",
+    "f1Li1": "Retry mechanisms nativos",
+    "f1Li2": "Fallback pathways automatizados",
+    "f2Title": "High-Performance Data (LINQ)",
+    "f2Desc": "Procesamiento en memoria usando LINQ nativo en UiPath para manipular DataTables masivos en milisegundos, superando por mucho a las actividades estándar.",
+    "f3Title": "Trazabilidad Total",
+    "f3Desc": "Auditoría en tiempo real y dashboards listos para compliance. Cada transacción registra su ciclo de vida exacto para seguimiento instantáneo y resolución de disputas."
+  },
+  "technologies": {
+    "title": "Tecnologías que Utilizamos",
+    "desc": "Nos asociamos con los líderes de la industria para entregar soluciones robustas y escalables.",
+    "badge1": "Proprietary Framework",
+    "badge2": "Softtek Accelerator"
+  },
+  "platforms": {
+    "title": "Plataformas que Automatizamos",
+    "desc": "Interactuamos fluidamente con los sistemas empresariales más críticos de su organización.",
+    "p1": "SAP",
+    "p2": "ServiceNow",
+    "p3": "Jira",
+    "p4": "Excel",
+    "p5": "Web Applications",
+    "p6": "Databases"
+  },
+  "problems": {
+    "title": "Los desafíos operativos que frenan su crecimiento",
+    "desc": "Identificamos y resolvemos los principales obstáculos en su flujo de trabajo operativo.",
+    "p1Title": "Procesos manuales repetitivos",
+    "p1Desc": "Colaboradores atados a rutinas mecánicas en lugar de análisis crítico y estrategia de negocio.",
+    "p2Title": "Errores humanos",
+    "p2Desc": "Costosas interrupciones en el servicio originadas por equivocaciones en la transcripción de datos.",
+    "p3Title": "Procesos lentos",
+    "p3Desc": "Cuellos de botella prolongados que afectan gravemente el servicio al cliente y la facturación.",
+    "p4Title": "Falta de integración",
+    "p4Desc": "Múltiples plataformas corporativas que funcionan como silos completamente desconectados.",
+    "p5Title": "Pérdida de tiempo",
+    "p5Desc": "Altos volúmenes de horas operativas desperdiciadas y falta de escalabilidad de los equipos."
+  },
+  "benefits": {
+    "title": "Impacto Empresarial",
+    "b1Title": "Reducción de costos operativos",
+    "b1Desc": "Disminuya dramáticamente los gastos recurrentes asociados a operaciones manuales.",
+    "b2Title": "Incremento de productividad",
+    "b2Desc": "Libere a su equipo para enfocarse en tareas de alto valor, aumentando la eficiencia global.",
+    "b3Title": "Automatización 24/7",
+    "b3Desc": "Procesamiento continuo ininterrumpido las 24 horas del día, los 365 días del año.",
+    "b4Title": "Eliminación de errores humanos",
+    "b4Desc": "Precisión del 100% y exactitud garantizada en la transcripción y procesamiento de datos.",
+    "b5Title": "Cumplimiento de SLA",
+    "b5Desc": "Cumplimiento garantizado en tiempos de respuesta y visibilidad total operativa.",
+    "metrics": "Performance Metrics",
+    "manual": "Manual (12h)",
+    "rpa": "RPA/AI (1.5h)",
+    "roi": "ROI Proyectado"
+  },
+  "ai": {
+    "title": "Automatización Inteligente e IA Aplicada",
+    "desc": "Capacidades cognitivas avanzadas integradas directamente a sus procesos.",
+    "a1Title": "Agentes de Resolución Autónoma",
+    "a1Desc": "Agentes autónomos para resolver solicitudes e incidentes de soporte interno y externo omnicanal.",
+    "a2Title": "Analítica Predictiva Operativa",
+    "a2Desc": "Modelos predictivos que asisten a ejecutivos con analítica en tiempo real.",
+    "a3Title": "Interacción en Lenguaje Natural",
+    "a3Desc": "Interfaces de lenguaje natural para consultar bases de datos corporativas complejas y ERPs.",
+    "a4Title": "Procesamiento Inteligente de Documentos (IDP)",
+    "a4Desc": "Procesamiento de documentos no estructurados usando OCR empresarial y machine learning aplicado."
+  }
+}

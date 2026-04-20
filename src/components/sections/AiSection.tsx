@@ -1,27 +1,36 @@
 import { FadeIn } from "@/components/ui/FadeIn";
 import { Robot, TrendUp, MagnifyingGlass, FileText } from "@phosphor-icons/react/dist/ssr";
 
-export function AiSection() {
+export function AiSection({ dict }: { dict?: any }) {
+  const d = dict || {
+    title: "Automatización Inteligente e IA Aplicada",
+    desc: "Capacidades cognitivas avanzadas integradas directamente a sus procesos.",
+    a1Title: "Agentes de Resolución Autónoma", a1Desc: "Agentes autónomos para resolver solicitudes e incidentes de soporte interno y externo omnicanal.",
+    a2Title: "Analítica Predictiva Operativa", a2Desc: "Modelos predictivos que asisten a ejecutivos con analítica en tiempo real.",
+    a3Title: "Interacción en Lenguaje Natural", a3Desc: "Interfaces de lenguaje natural para consultar bases de datos corporativas complejas y ERPs.",
+    a4Title: "Procesamiento Inteligente de Documentos (IDP)", a4Desc: "Procesamiento de documentos no estructurados usando OCR empresarial y machine learning aplicado."
+  };
+
   const aiSolutions = [
     {
       icon: <Robot size={40} weight="duotone" className="text-accent mb-4" />,
-      title: "Agentes de Resolución Autónoma",
-      desc: "Agentes autónomos para resolver solicitudes e incidentes de soporte interno y externo omnicanal.",
+      title: d.a1Title,
+      desc: d.a1Desc,
     },
     {
       icon: <TrendUp size={40} weight="duotone" className="text-accent mb-4" />,
-      title: "Analítica Predictiva Operativa",
-      desc: "Modelos predictivos que asisten a ejecutivos con analítica en tiempo real.",
+      title: d.a2Title,
+      desc: d.a2Desc,
     },
     {
       icon: <MagnifyingGlass size={40} weight="duotone" className="text-accent mb-4" />,
-      title: "Interacción en Lenguaje Natural",
-      desc: "Interfaces de lenguaje natural para consultar bases de datos corporativas complejas y ERPs.",
+      title: d.a3Title,
+      desc: d.a3Desc,
     },
     {
       icon: <FileText size={40} weight="duotone" className="text-accent mb-4" />,
-      title: "Procesamiento Inteligente de Documentos (IDP)",
-      desc: "Procesamiento de documentos no estructurados usando OCR empresarial y machine learning aplicado.",
+      title: d.a4Title,
+      desc: d.a4Desc,
     },
   ];
 
@@ -30,10 +39,10 @@ export function AiSection() {
       <div className="container">
         <FadeIn className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Automatización Inteligente e IA Aplicada
+            {d.title}
           </h2>
           <p className="text-white/80 text-lg">
-            Capacidades cognitivas avanzadas integradas directamente a sus procesos.
+            {d.desc}
           </p>
         </FadeIn>
 

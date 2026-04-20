@@ -1,0 +1,110 @@
+{
+  "navbar": {
+    "solutions": "Solutions",
+    "platforms": "Platforms",
+    "ai": "Applied AI",
+    "useCases": "Use Cases",
+    "methodology": "Methodology",
+    "requestDemo": "Request Demo"
+  },
+  "hero": {
+    "badge": "Innovation and Technological Partnership",
+    "titlePrefix": "Reduction of Operational Costs with ",
+    "titleHighlight": "Artificial Intelligence",
+    "subtitle": "Unprecedented scalability and zero manual errors. Intelligent cross-platform automation operating seamlessly between ",
+    "subtitleHighlight": "SAP, Web platforms, Excel, and Databases.",
+    "ctaAudit": "Schedule Process Audit",
+    "ctaExplore": "Explore Architecture",
+    "trustTitle": "Guaranteed Enterprise Trust",
+    "trust1": "Native SAP Integration",
+    "trust2": "Microsoft Ecosystem",
+    "trust3": "Security and Compliance"
+  },
+  "services": {
+    "title": "Our Automation Services",
+    "desc": "We power your operations with next-generation technology to achieve new levels of enterprise efficiency and accuracy.",
+    "s1Title": "RPA Automation",
+    "s1Desc": "Software robots that execute repetitive tasks in enterprise systems.",
+    "s2Title": "Cognitive Agents & Applied AI",
+    "s2Desc": "Agents capable of interacting with users and executing operational tasks.",
+    "s3Title": "Process Automation",
+    "s3Desc": "Optimization of operational workflows through automation technologies.",
+    "s4Title": "Systems Integration",
+    "s4Desc": "Connection between multiple enterprise systems and legacy platforms.",
+    "s5Title": "Data Automation",
+    "s5Desc": "Extraction, processing, and automatic generation of corporate reports."
+  },
+  "frida": {
+    "title": "The Frida Standard:",
+    "titleHighlight": "Resilient Enterprise Automation",
+    "subtitle": "We don't build scripts. We implement robust architectures on UiPath ready to scale.",
+    "f1Title": "Advanced Exception Handling",
+    "f1Desc1": "Automatic error recovery, complex State Machines, and clean transactional logs. Structures prepared for system failures or UI changes, guaranteeing ",
+    "f1DescBold": "zero bots hanging in production.",
+    "f1Li1": "Native retry mechanisms",
+    "f1Li2": "Automated fallback pathways",
+    "f2Title": "High-Performance Data (LINQ)",
+    "f2Desc": "In-memory processing using native LINQ in UiPath to manipulate massive DataTables in milliseconds, vastly outperforming standard activities.",
+    "f3Title": "Total Traceability",
+    "f3Desc": "Real-time auditing and compliance-ready dashboards. Each transaction records its exact lifecycle for instant tracking and dispute resolution."
+  },
+  "technologies": {
+    "title": "Technologies We Use",
+    "desc": "We partner with industry leaders to deliver robust and scalable solutions.",
+    "badge1": "Proprietary Framework",
+    "badge2": "Softtek Accelerator"
+  },
+  "platforms": {
+    "title": "Platforms We Automate",
+    "desc": "We interact seamlessly with your organization's most critical enterprise systems.",
+    "p1": "SAP",
+    "p2": "ServiceNow",
+    "p3": "Jira",
+    "p4": "Excel",
+    "p5": "Web Applications",
+    "p6": "Databases"
+  },
+  "problems": {
+    "title": "Operational challenges holding back your growth",
+    "desc": "We identify and resolve the main obstacles in your operational workflow.",
+    "p1Title": "Repetitive manual processes",
+    "p1Desc": "Collaborators tied to mechanical routines instead of critical analysis and business strategy.",
+    "p2Title": "Human errors",
+    "p2Desc": "Costly service interruptions caused by data transcription mistakes.",
+    "p3Title": "Slow processes",
+    "p3Desc": "Prolonged bottlenecks that severely affect customer service and billing.",
+    "p4Title": "Lack of integration",
+    "p4Desc": "Multiple corporate platforms operating as completely disconnected silos.",
+    "p5Title": "Time loss",
+    "p5Desc": "High volumes of operational hours wasted and lack of team scalability."
+  },
+  "benefits": {
+    "title": "Business Impact",
+    "b1Title": "Reduction of operational costs",
+    "b1Desc": "Dramatically decrease recurring expenses associated with manual operations.",
+    "b2Title": "Productivity increase",
+    "b2Desc": "Free up your team to focus on high-value tasks, increasing overall efficiency.",
+    "b3Title": "24/7 Automation",
+    "b3Desc": "Uninterrupted continuous processing 24 hours a day, 365 days a year.",
+    "b4Title": "Elimination of human errors",
+    "b4Desc": "100% precision and guaranteed accuracy in data transcription and processing.",
+    "b5Title": "SLA Compliance",
+    "b5Desc": "Guaranteed compliance in response times and total operational visibility.",
+    "metrics": "Performance Metrics",
+    "manual": "Manual (12h)",
+    "rpa": "RPA/AI (1.5h)",
+    "roi": "Projected ROI"
+  },
+  "ai": {
+    "title": "Intelligent Automation & Applied AI",
+    "desc": "Advanced cognitive capabilities integrated directly into your processes.",
+    "a1Title": "Autonomous Resolution Agents",
+    "a1Desc": "Autonomous agents to resolve internal and external omnichannel support requests and incidents.",
+    "a2Title": "Operational Predictive Analytics",
+    "a2Desc": "Predictive models that assist executives with real-time analytics.",
+    "a3Title": "Natural Language Interaction",
+    "a3Desc": "Natural language interfaces to query complex corporate databases and ERPs.",
+    "a4Title": "Intelligent Document Processing (IDP)",
+    "a4Desc": "Processing of unstructured documents using enterprise OCR and applied machine learning."
+  }
+}

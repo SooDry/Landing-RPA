@@ -1,32 +1,47 @@
 import { FadeIn } from "@/components/ui/FadeIn";
 import { HandCoins, WarningCircle, HourglassHigh, Plugs, ClockCounterClockwise } from "@phosphor-icons/react/dist/ssr";
 
-export function ProblemsSection() {
+export function ProblemsSection({ dict }: { dict?: any }) {
+  const d = dict || {
+    title: "Los desafíos operativos que frenan su crecimiento",
+    desc: "Identificamos y resolvemos los principales obstáculos en su flujo de trabajo operativo.",
+    p1Title: "Procesos manuales repetitivos",
+    p1Desc: "Colaboradores atados a rutinas mecánicas en lugar de análisis crítico y estrategia de negocio.",
+    p2Title: "Errores humanos",
+    p2Desc: "Costosas interrupciones en el servicio originadas por equivocaciones en la transcripción de datos.",
+    p3Title: "Procesos lentos",
+    p3Desc: "Cuellos de botella prolongados que afectan gravemente el servicio al cliente y la facturación.",
+    p4Title: "Falta de integración",
+    p4Desc: "Múltiples plataformas corporativas que funcionan como silos completamente desconectados.",
+    p5Title: "Pérdida de tiempo",
+    p5Desc: "Altos volúmenes de horas operativas desperdiciadas y falta de escalabilidad de los equipos."
+  };
+
   const problems = [
     {
       icon: <HandCoins size={32} weight="duotone" />,
-      title: "Procesos manuales repetitivos",
-      desc: "Colaboradores atados a rutinas mecánicas en lugar de análisis crítico y estrategia de negocio.",
+      title: d.p1Title,
+      desc: d.p1Desc,
     },
     {
       icon: <WarningCircle size={32} weight="duotone" />,
-      title: "Errores humanos",
-      desc: "Costosas interrupciones en el servicio originadas por equivocaciones en la transcripción de datos.",
+      title: d.p2Title,
+      desc: d.p2Desc,
     },
     {
       icon: <HourglassHigh size={32} weight="duotone" />,
-      title: "Procesos lentos",
-      desc: "Cuellos de botella prolongados que afectan gravemente el servicio al cliente y la facturación.",
+      title: d.p3Title,
+      desc: d.p3Desc,
     },
     {
       icon: <Plugs size={32} weight="duotone" />,
-      title: "Falta de integración",
-      desc: "Múltiples plataformas corporativas que funcionan como silos completamente desconectados.",
+      title: d.p4Title,
+      desc: d.p4Desc,
     },
     {
       icon: <ClockCounterClockwise size={32} weight="duotone" />,
-      title: "Pérdida de tiempo",
-      desc: "Altos volúmenes de horas operativas desperdiciadas y falta de escalabilidad de los equipos.",
+      title: d.p5Title,
+      desc: d.p5Desc,
     },
   ];
 
@@ -35,10 +50,10 @@ export function ProblemsSection() {
       <div className="container">
         <FadeIn className="text-center max-w-4xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-            Los desafíos operativos que frenan su crecimiento
+            {d.title}
           </h2>
           <p className="text-muted text-lg">
-            Identificamos y resolvemos los principales obstáculos en su flujo de trabajo operativo.
+            {d.desc}
           </p>
         </FadeIn>
 

@@ -1,7 +1,14 @@
 import { FadeIn } from "@/components/ui/FadeIn";
 import { Robot, Lightning, Infinity, Cloud, Cpu, Code } from "@phosphor-icons/react/dist/ssr";
 
-export function TechnologiesSection() {
+export function TechnologiesSection({ dict }: { dict?: any }) {
+  const d = dict || {
+    title: "Tecnologías que Utilizamos",
+    desc: "Nos asociamos con los líderes de la industria para entregar soluciones robustas y escalables.",
+    badge1: "Proprietary Framework",
+    badge2: "Softtek Accelerator"
+  };
+
   const technologies = [
     { icon: <Robot size={48} weight="duotone" className="text-secondary" />, name: "UiPath" },
     { icon: <Lightning size={48} weight="duotone" className="text-secondary" />, name: "Power Automate" },
@@ -10,12 +17,12 @@ export function TechnologiesSection() {
     {
       icon: <Cpu size={48} weight="duotone" className="text-accent" />,
       name: "Frida Automation Platform",
-      badge: "Proprietary Framework",
+      badge: d.badge1,
     },
     {
       icon: <Code size={48} weight="duotone" className="text-secondary" />,
       name: "Frida Code Copilot",
-      badge: "Softtek Accelerator",
+      badge: d.badge2,
     },
   ];
 
@@ -23,9 +30,9 @@ export function TechnologiesSection() {
     <section className="bg-bg-dark py-24 text-white" id="tecnologias">
       <div className="container">
         <FadeIn className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Tecnologías que Utilizamos</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{d.title}</h2>
           <p className="text-white/80 text-lg">
-            Nos asociamos con los líderes de la industria para entregar soluciones robustas y escalables.
+            {d.desc}
           </p>
         </FadeIn>
 
